@@ -67,7 +67,7 @@ def product2(s:String):Int = {
     if(s.length == 1)
       p*s(0).toInt
     else
-      p*s(0).toInt*loop(p*s(0).toInt,s.tail)
+      loop(p*s(0).toInt,s.tail)
   }
   loop(1,s)
 }
